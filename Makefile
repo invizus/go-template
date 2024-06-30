@@ -4,3 +4,6 @@ init:
 
 run:
 	go run cmd/game/main.go
+
+build:
+	go build -ldflags "-w -s" -o thegame cmd/game/main.go
